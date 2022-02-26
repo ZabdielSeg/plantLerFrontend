@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Rowdies:wght@300&display=swap');
+
+*{
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+}
+
+.principal-title {
+  font-size: 6rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(59, 165, 82);
+  line-height: 100%;
+}
+
+.lema {
+  font-family: 'Quintessential', cursive;
+  font-size: 2rem;
+}
+
+.best-sellers-title, h2 {
+  font-family: 'Rowdies', cursive;
+  font-size: 3rem;
+}
+
+.probando {
+  height: 100%;
+  background-color: black;
+  width: 50%;
+}
+
+.container-center {
+  /* background-color: black; */
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-layout {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.profile-div-centered {
+  background-color: chocolate;
+}
+
+.cover-text {
+  position: absolute;
+  /* background-color: coral; */
+  width: 50vw;
+  top: 50px;
+  left: 50%;
+}
+
+.carousel-div {
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.react-multi-carousel-list {
+  /* background-color: blue; */
+  height: 500px
+}
+
+.react-multi-carousel-track {
+  /* background-color: burlywood; */
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.react-multi-carousel-dot-list {
+  /* background-color: chartreuse; */
+}
+
+.carousel-item {
+  height: 90%;
+}
+
+.carousel-item img {
+  /* display: none; */
+}
+
+.hekp {
+  /* background-color: darkmagenta; */
+  font-size: 2.5rem;
+}
+
+.popular-partners-div {
+  display: flex;
+  /* background-color: darkmagenta; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.plant-card {
+  width: 30%; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-information {
+  height: 30%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.card-information > p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.creator-name {
+  text-shadow: 30px 10px 6px rgb(153, 153, 153);
+}
+
+.icon-footer-href {
+  color: black
+}
+
+.icon-footer-href:hover {
+  color: rgb(59, 165, 82);
+}
+
+@media (max-width: 1350px) {
+  .principal-title {
+    font-size: 4.9rem;
+  }
+
+  .lema {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .principal-title {
+    font-size: 4rem;
+  }
+
+  .lema, h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 910px) {
+  .principal-title {
+    font-size: 2.7rem;
+    width: 80%;
+  }
+  .plant-card {
+    width: 45%
+  }
+
+  .lema {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-card {
+    width: 80%;
+  }
+  .principal-title {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .lema {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 465px) {
+  .principal-title {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .lema {
+    font-size: .5rem;
+    width: 100%;
+  }
+}
