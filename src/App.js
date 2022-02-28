@@ -19,12 +19,20 @@ import EditPlant from './components/Plants/EditPlant';
 import EditProfileInfo from './components/Auth/EditProfileInfo';
 import PaymentForm from './components/CartPageAndPayment/PaymentForm';
 import {ProtectedRoutesCart, ProtectedRoutesLoggedUser} from './components/Auth/protected-routes';
+const serviceAuth = new AuthService();
+const servicePlants = new PlantService();
 
 function App() {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetchUser();
   }, []);
+
+  const fetchUser = () => {
+    serviceAuth.loggedin()
+      .then(response => setUser(response))
+      .catch(err => setUser(false));
+  };
 
   const [products, setProducts] = useState([]);
 
@@ -47,14 +55,8 @@ function App() {
     updateCart();
   }, []);
 
-  const serviceAuth = new AuthService();
-  const servicePlants = new PlantService();
 
-  const fetchUser = () => {
-    serviceAuth.loggedin()
-      .then(response => setUser(response))
-      .catch(err => setUser(false));
-  };
+
 
   const getTheUser = userObj => {
     setUser(userObj);
