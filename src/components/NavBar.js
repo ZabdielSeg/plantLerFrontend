@@ -26,7 +26,7 @@ const NavBar = props => {
                 props.getUser(null);
                 navigate('/');
             });
-    }
+    };
 
     return (
         <nav className="navbar mt-2 has-shadow" role="navigation" aria-label="main navigation">
