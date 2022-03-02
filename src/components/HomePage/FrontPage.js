@@ -3,7 +3,7 @@ import React from "react";
 const FrontPage = () => {
     return (
         <div className="" style={{ position: 'relative', boxSizing: 'border-box' }}>
-            <div className="has-text-right cover-text" style={{ width: '40%', zIndex: '100' }}>
+            <div className="has-text-right cover-text">
                 <h1 className=" principal-title" >Welcome to PlantLer</h1>
                 <p className="lema">"Where you can buy a plant or a tree"</p>
             </div>

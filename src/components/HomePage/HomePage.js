@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CarouselPlants from "./Carousel";
 import FrontPage from "./FrontPage";
 import PopoularPartnersSection from "./PopularPartners";

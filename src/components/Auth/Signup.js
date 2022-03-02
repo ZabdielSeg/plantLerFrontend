@@ -143,7 +143,7 @@ const Signup = props => {
 
                     <div className="field">
                         <div className="control">
-                            <button onClick={handleIsSeller} className="button is-link">{isSeller ? "No, I just want to BUY plants" : "I want to SELL plants"}</button>
+                            <button onClick={handleIsSeller} className="button is-info">{isSeller ? "No, I just want to BUY plants" : "I want to SELL plants"}</button>
                         </div>
                     </div>
 
@@ -168,14 +168,17 @@ const Signup = props => {
                         </>
                     }
 
-                    <div className="field is-grouped">
-                        <div className="control">
-                            <button className="button is-link">Create Account</button>
-                        </div>
-                        <div className="control">
-                            <span>Already an User?</span>
-                            <Link to={'/login'} className="button is-link is-light">Login</Link>
-                        </div>
+                    <div className="buttons is-centered">
+                        {/* <div className="control"> */}
+                        <button className="button is-success is-rounded">Create Account</button>
+                        {/* </div> */}
+                        {/* <div className="control"> */}
+                        {/* </div> */}
+                    </div>
+
+                    <div className='buttons is-right'>
+                        <span>Already an User?</span>
+                        <Link to={'/login'} className="button is-warning is-light">Login</Link>
                     </div>
 
                     {errorMessage &&

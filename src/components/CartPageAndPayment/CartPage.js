@@ -19,25 +19,25 @@ const CartPage = props => {
     };
 
     const addition = i => {
-        const hh = [...products].map((item, o) => {
+        const copy = [...products].map((item, o) => {
             if (i === o) {
                 return { ...item, quantity: item.quantity + 1 };
             }
             return item;
         });
 
-        setProducts(hh);
+        setProducts(copy);
     };
 
     const substraction = i => {
-        const hh = [...products].map((item, o) => {
+        const copy = [...products].map((item, o) => {
             if (i === o) {
                 return { ...item, quantity: item.quantity - 1 };
             }
             return item;
         });
 
-        setProducts(hh);
+        setProducts(copy);
     }
 
     const abx = obj => {

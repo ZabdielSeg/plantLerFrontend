@@ -15,7 +15,7 @@ const PopoularPartnersSection = () => {
     };
     return (
         <div className="popular-partners-div" style={{ minHeight: '500px' }}>
-            <h2 className="best-sellers-title">Our best Sellers</h2>
+            <h2 className="">Our best Sellers</h2>
             <div style={{ width: '90%' }}>
                 {allSellers &&
                     <div className="columns is-multiline">

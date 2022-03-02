@@ -5,7 +5,7 @@ import { useNavigate, useOutletContext } from "react-router-dom";
 import CreditCard from "./CreditCard";
 
 const PaymentForm = () => {
-    const [total, setTotal] = useOutletContext();
+    const [total] = useOutletContext();
     const [cardNumber, setCardNumber] = useState('');
     const [cardExpirationYear, setCardExpirationYear] = useState('');
     const [cardExpirationMonth, setCardExpirationMonth] = useState('');

@@ -69,7 +69,7 @@ const CreatePlant = props => {
                         <div className="field-body">
                             <div className="field">
                                 <p className="control is-expanded has-icons-left">
-                                    <input className="input" type="text" placeholder="Name" value={plantName} onChange={handlePlantName} />
+                                    <input className="input" type="text" placeholder="Name" value={plantName} onChange={handlePlantName} required/>
                                     <span className="icon is-small is-left">
                                         <FontAwesomeIcon icon={faSeedling} size='lg' />
                                     </span>
@@ -85,7 +85,7 @@ const CreatePlant = props => {
                         <div className="field-body">
                             <div className="field">
                                 <div className="control">
-                                    <textarea className="textarea" maxLength={'150'} minLength={'30'} placeholder="Give a brief explanaion of the plant" value={description} onChange={handleDescription}></textarea>
+                                    <textarea className="textarea" maxLength={'150'} minLength={'30'} placeholder="Give a brief explanaion of the plant" value={description} onChange={handleDescription} required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ const CreatePlant = props => {
                             <div className="field">
                                 <div className="control">
                                     <div className="select is-fullwidth">
-                                        <select value={location} onChange={handleLocation}>
+                                        <select value={location} onChange={handleLocation} required>
                                             <option value='Indoor'>Indoor</option>
                                             <option value='Outdoor'>Outdoor</option>
                                         </select>
@@ -117,7 +117,7 @@ const CreatePlant = props => {
                             <div className="field">
                                 <div className="control">
                                     <div className="select is-fullwidth">
-                                        <select value={light} onChange={handleLight} >
+                                        <select value={light} onChange={handleLight} required >
                                             <option value='Sol'>Sol</option>
                                             <option value='Sombra'>Sombra</option>
                                             <option value='Media Sombra'>Media Sombra</option>
@@ -136,12 +136,12 @@ const CreatePlant = props => {
                             <div className="field is-narrow">
                                 <div className="field has-addons">
                                     <p className="control">
-                                        <a className="button is-static">
+                                        <p className="button is-static">
                                             $
-                                        </a>
+                                        </p>
                                     </p>
                                     <p className="control is-expanded">
-                                        <input className="input" type="number" placeholder="Set the price" value={price} onChange={handlePrice} step="0.01" />
+                                        <input className="input" type="number" placeholder="Set the price" value={price} onChange={handlePrice} step="0.01" required />
                                     </p>
                                 </div>
                                 <p className="help">Do not enter the first zero</p>
